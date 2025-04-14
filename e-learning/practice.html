@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice | JEE Master</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/practice.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img class="img-logo" src="https://cdn1.iconfinder.com/data/icons/vibrancie-education/30/education_004-teaching-teacher-teach-instructor-study-school-1024.png" alt="JEE Master Logo">
+            <h1>JEE Master</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="subjects.html">Subjects</a></li>
+                <li><a href="practice.html" class="active">Practice</a></li>
+                <li><a href="mocktest.html">Mock Tests</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <div class="user-profile">
+                <img class="img-logo" src="https://cdn2.iconfinder.com/data/icons/flat-style-svg-icons-part-1/512/users_group_people_friends-512.png" alt="User Profile">
+                <span>John Doe</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="practice-main">
+        <div class="practice-container">
+            <h2>Practice Questions</h2>
+            
+            <div class="practice-filters">
+                <div class="filter-group">
+                    <label for="subject-filter">Subject:</label>
+                    <select id="subject-filter">
+                        <option value="all">All Subjects</option>
+                        <option value="physics">Physics</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="mathematics">Mathematics</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="difficulty-filter">Difficulty:</label>
+                    <select id="difficulty-filter">
+                        <option value="all">All Levels</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="chapter-filter">Chapter:</label>
+                    <select id="chapter-filter">
+                        <option value="all">All Chapters</option>
+                        <option value="mechanics">Mechanics</option>
+                        <option value="electromagnetism">Electromagnetism</option>
+                        <option value="thermodynamics">Thermodynamics</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" id="apply-filters">Apply Filters</button>
+            </div>
+
+            <div class="practice-questions">
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">Q1</span>
+                        <span class="question-meta">
+                            <span class="subject-tag physics">Physics</span>
+                            <span class="difficulty-tag medium">Medium</span>
+                        </span>
+                    </div>
+                    <div class="question-content">
+                        <p>A particle moves along a straight line with its position given by x = t³ - 6t² + 9t + 5, where x is in meters and t is in seconds. What is the acceleration of the particle when the velocity is zero?</p>
+                    </div>
+                    <div class="question-options">
+                        <div class="option">
+                            <input type="radio" id="q1-option1" name="q1" value="A">
+                            <label for="q1-option1">6 m/s²</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q1-option2" name="q1" value="B">
+                            <label for="q1-option2">-6 m/s²</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q1-option3" name="q1" value="C">
+                            <label for="q1-option3">12 m/s²</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q1-option4" name="q1" value="D">
+                            <label for="q1-option4">-12 m/s²</label>
+                        </div>
+                    </div>
+                    <div class="question-actions">
+                        <button class="btn btn-outline btn-show-answer">Show Answer</button>
+                        <button class="btn btn-primary btn-submit-answer">Submit</button>
+                    </div>
+                    <div class="question-explanation">
+                        <p><strong>Explanation:</strong> First find velocity by differentiating position: v = dx/dt = 3t² - 12t + 9. Set v = 0 to find when velocity is zero: 3t² - 12t + 9 = 0 → t² - 4t + 3 = 0 → t = 1s or t = 3s. Acceleration is a = dv/dt = 6t - 12. At t=1s: a = -6 m/s², at t=3s: a = 6 m/s².</p>
+                        <p><strong>Correct Answer:</strong> B</p>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">Q2</span>
+                        <span class="question-meta">
+                            <span class="subject-tag chemistry">Chemistry</span>
+                            <span class="difficulty-tag hard">Hard</span>
+                        </span>
+                    </div>
+                    <div class="question-content">
+                        <p>Which of the following compounds will show geometrical isomerism?</p>
+                    </div>
+                    <div class="question-options">
+                        <div class="option">
+                            <input type="radio" id="q2-option1" name="q2" value="A">
+                            <label for="q2-option1">1-Butene</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q2-option2" name="q2" value="B">
+                            <label for="q2-option2">2-Butene</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q2-option3" name="q2" value="C">
+                            <label for="q2-option3">Propene</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q2-option4" name="q2" value="D">
+                            <label for="q2-option4">2-Methylpropene</label>
+                        </div>
+                    </div>
+                    <div class="question-actions">
+                        <button class="btn btn-outline btn-show-answer">Show Answer</button>
+                        <button class="btn btn-primary btn-submit-answer">Submit</button>
+                    </div>
+                    <div class="question-explanation">
+                        <p><strong>Explanation:</strong> Geometrical isomerism occurs in alkenes when each double bonded carbon is attached to two different groups. 2-Butene (CH₃-CH=CH-CH₃) can exist as cis and trans forms, while the other options don't have two different groups on both carbons of the double bond.</p>
+                        <p><strong>Correct Answer:</strong> B</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="btn btn-outline" disabled>Previous</button>
+                <span>Page 1 of 5</span>
+                <button class="btn btn-outline">Next</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>JEE Master</h3>
+                <p>Your complete JEE preparation platform with expert guidance and comprehensive resources.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 JEE Master. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/practice.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Tests | JEE Master</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/mocktest.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img class="img-logo" src="https://cdn1.iconfinder.com/data/icons/vibrancie-education/30/education_004-teaching-teacher-teach-instructor-study-school-1024.png" alt="JEE Master Logo">
+            <h1>JEE Master</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="subjects.html">Subjects</a></li>
+                <li><a href="practice.html">Practice</a></li>
+                <li><a href="mocktest.html" class="active">Mock Tests</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <div class="user-profile">
+                <img class="img-logo" src="https://cdn2.iconfinder.com/data/icons/flat-style-svg-icons-part-1/512/users_group_people_friends-512.png"  alt="User Profile">
+                <span>John Doe</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="mocktest-main">
+        <div class="mocktest-container">
+            <h2>JEE Mock Tests</h2>
+            
+            <div class="test-categories">
+                <div class="category-tabs">
+                    <button class="active" data-category="all">All Tests</button>
+                    <button data-category="full-length">Full Length</button>
+                    <button data-category="subject-wise">Subject Wise</button>
+                    <button data-category="chapter-wise">Chapter Wise</button>
+                    <button data-category="previous-year">Previous Year</button>
+                </div>
+            </div>
+
+            <div class="test-list">
+                <!-- Test cards will be populated by JavaScript -->
+            </div>
+
+            <div class="test-performance">
+                <h3>Your Test Performance</h3>
+                <div class="performance-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>Average Score</h4>
+                            <p>72%</p>
+                            <span>+5% from last month</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>Highest Score</h4>
+                            <p>89%</p>
+                            <span>Full Test #3</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>Average Time</h4>
+                            <p>2.5 mins/Q</p>
+                            <span>-0.3 from last month</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>JEE Master</h3>
+                <p>Your complete JEE preparation platform with expert guidance and comprehensive resources.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 JEE Master. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/mocktest.js"></script>
+</body>
+</html>

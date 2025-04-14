@@ -1,0 +1,234 @@
+/* Mock Test Page Specific Styles */
+.mocktest-main {
+    padding: 40px 5%;
+    background-color: #f5f7fa;
+}
+
+.mocktest-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mocktest-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--dark-color);
+    text-align: center;
+}
+
+.test-categories {
+    margin-bottom: 30px;
+}
+
+.category-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category-tabs button {
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid var(--light-gray);
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-tabs button.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.category-tabs button:hover:not(.active) {
+    background-color: var(--light-gray);
+}
+
+.test-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.test-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.test-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.test-header {
+    padding: 20px;
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.test-header h3 {
+    font-size: 1.2rem;
+    color: var(--dark-color);
+}
+
+.test-tag {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.test-tag.full-length {
+    background-color: rgba(74, 107, 255, 0.1);
+    color: var(--primary-color);
+}
+
+.test-tag.subject-wise {
+    background-color: rgba(255, 107, 107, 0.1);
+    color: var(--secondary-color);
+}
+
+.test-tag.chapter-wise {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: var(--success-color);
+}
+
+.test-tag.previous-year {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: var(--warning-color);
+}
+
+.test-details {
+    padding: 20px;
+}
+
+.test-details p {
+    margin-bottom: 15px;
+    color: var(--gray-color);
+    line-height: 1.6;
+}
+
+.test-meta {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.test-meta li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.test-meta i {
+    margin-right: 10px;
+    color: var(--primary-color);
+    width: 20px;
+    text-align: center;
+}
+
+.test-actions {
+    padding: 0 20px 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.test-actions .btn {
+    flex: 1;
+    text-align: center;
+}
+
+.test-performance h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.performance-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.stat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(74, 107, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.stat-info h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: var(--dark-color);
+}
+
+.stat-info p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 3px;
+    color: var(--primary-color);
+}
+
+.stat-info span {
+    font-size: 0.8rem;
+    color: var(--gray-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .test-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .category-tabs {
+        justify-content: center;
+    }
+    
+    .test-actions {
+        flex-direction: column;
+    }
+    
+    .test-actions .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .mocktest-main {
+        padding: 20px 3%;
+    }
+    
+    .mocktest-container h2 {
+        font-size: 1.8rem;
+    }
+    
+    .performance-stats {
+        grid-template-columns: 1fr;
+    }
+}

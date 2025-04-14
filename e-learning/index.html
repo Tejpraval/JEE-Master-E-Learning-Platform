@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEE Master - Online Learning Platform</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img class="img-logo" src="https://cdn1.iconfinder.com/data/icons/vibrancie-education/30/education_004-teaching-teacher-teach-instructor-study-school-1024.png" alt="JEE Master Logo">
+            <h1>JEE Master</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="subjects.html">Subjects</a></li>
+                <li><a href="practice.html">Practice</a></li>
+                <li><a href="mocktest.html">Mock Tests</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="#" class="btn btn-outline">Login</a>
+            <a href="#" class="btn btn-primary">Sign Up</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Ace Your JEE Preparation</h2>
+                <p>Comprehensive courses, expert teachers, and personalized learning for JEE Main & Advanced</p>
+                
+                <div class="search-container">
+                    <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search for courses, topics, or teachers..." autocomplete="off">
+                    <button id="search-button" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-dropdown" id="search-dropdown">
+                        <!-- Search suggestions will appear here -->
+                    </div>
+                </div>
+                    <div class="search-filters">
+                        <span class="filter-label">Filter by:</span>
+                        <div class="filter-options">
+                            <label><input type="checkbox" name="filter" value="physics" checked> Physics</label>
+                            <label><input type="checkbox" name="filter" value="chemistry" checked> Chemistry</label>
+                            <label><input type="checkbox" name="filter" value="mathematics" checked> Mathematics</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <i class="fas fa-video"></i>
+                <h3>1000+ Video Lectures</h3>
+                <p>High-quality video content covering all JEE topics</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Progress Tracking</h3>
+                <p>Monitor your learning journey with detailed analytics</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-fire"></i>
+                <h3>Daily Streaks</h3>
+                <p>Build consistency and maintain your study momentum</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-clock"></i>
+                <h3>Time Management</h3>
+                <p>Track study hours and optimize your preparation</p>
+            </div>
+        </section>
+
+        <section class="course-categories">
+            <h2>Browse by Subject</h2>
+            <div class="category-tabs">
+                <button class="active">All Courses</button>
+                <button>Physics</button>
+                <button>Chemistry</button>
+                <button>Mathematics</button>
+                
+            </div>
+        </section>
+
+        <section class="course-list">
+            <h2>Popular Courses</h2>
+            <div class="courses-container">
+                <!-- Course cards will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>JEE Master</h3>
+                <p>Your complete JEE preparation platform with expert guidance and comprehensive resources.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 JEE Master. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
