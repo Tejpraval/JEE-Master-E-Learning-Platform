@@ -72,7 +72,7 @@ jee-master/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/jee-master.git
+    https://github.com/Tejpraval/JEE-Master-E-Learning-Platform.git
 
 2. **Open in browser**
    * Simply open index.html in your preferred browser
